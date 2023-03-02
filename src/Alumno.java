@@ -1,27 +1,26 @@
-package Ejercicio5;
-
 public class Alumno {
-    private int dni;
+
+    private String DNI;
     private String nombre;
     private String apellidos;
     private String dir;
 
-    public Alumno(String dni, String nombre, String apellidos, String dir) {
+    public Alumno() {
     }
 
-    public Alumno(int dni, String nombre, String apellidos, String dir) {
-        this.dni = dni;
+    public Alumno(String DNI, String nombre, String apellidos, String dir) {
+        this.DNI = DNI;
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dir = dir;
     }
 
-    public int getDni() {
-        return dni;
+    public String getDNI() {
+        return DNI;
     }
 
-    public void setDni(int dni) {
-        this.dni = dni;
+    public void setDNI(String DNI) {
+        this.DNI = DNI;
     }
 
     public String getNombre() {
@@ -51,7 +50,7 @@ public class Alumno {
     @Override
     public String toString() {
         return "Alumno{" +
-                "dni=" + dni +
+                "DNI='" + DNI + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", dir='" + dir + '\'' +
